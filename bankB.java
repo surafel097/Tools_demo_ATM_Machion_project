@@ -36,18 +36,7 @@ public class bankB implements Bank{
         System.out.println(isTrue && isIt);
         return (isTrue && isIt);
     }
-    public boolean authorizeCard(String passCode){
-        boolean isTrue = false;
-        for(Account acc : B){
-                if (passCode.compareTo(acc.getPassword())>0) {
-                    isTrue = true;
-                    break;
-                }else{
-                    System.out.println("Wrong password");
-                }
-        }
-        return isTrue;
-    }
+   
     public double withdraw(String passCode,double amount){
         double amount2= 0;
         for(Account acc : B){
