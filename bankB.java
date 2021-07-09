@@ -38,7 +38,7 @@ public class bankB implements Bank{
     }
    
     public double withdraw(String passCode,double amount){
-        double amount2= 0;
+        doubleamount2= 0;
         for(Account acc : B){
             if (passCode.compareTo(acc.getPassword()) > 0) {
                 if(amount <= acc.getBalance()) {
