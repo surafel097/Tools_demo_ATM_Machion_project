@@ -5,16 +5,13 @@ import java.util.List;
 import java.util.Observer;
 
 public class Account extends bankAdaptor {
-
     private String name;
     private double balance;
     private int card;
     private String exp;
     private String pass;
 
-    /**
-     * @constructor default
-     */
+
     public Account(){
         super();
         this.name = "";
@@ -42,9 +39,7 @@ public class Account extends bankAdaptor {
         }
     }
 
-    /**
-     * @constructor with specified values
-     */
+   
     public Account(String name,double balance, int card, String exp, String pass){
 
         this.name = name;
@@ -110,8 +105,5 @@ public class Account extends bankAdaptor {
     }
 
    
-    public String toString(){
-        return String.format("Customer: Name: %s  Card: %s Expiration Date:%s Password:%s", getName(), getCardNum(), getExpDate(), getPassword());
-    }
-
 }
+//dd
