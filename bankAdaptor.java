@@ -9,7 +9,7 @@ public class bankAdaptor{
     public static bankAdaptor getInstance() {
         return instance ;
     }
-
+//to declear the bank
     private String flag ;
 
     private bankA A ;
